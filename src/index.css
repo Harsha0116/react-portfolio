@@ -1,0 +1,75 @@
+:root {
+  --bg-black: #0a0a0a;
+  --card-black: #111;
+  --neon: #00fff5;
+  --text: #eaeaea;
+  --muted: #aaaaaa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg-black);
+  color: var(--text);
+}
+
+/* Common section styling */
+section {
+  padding: 80px 10%;
+}
+
+/* Neon title */
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: var(--neon);
+  text-shadow: 0 0 15px var(--neon);
+}
+
+/* Card style */
+.card {
+  background: var(--card-black);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 245, 0.15);
+}
+/* Neon hover animation for cards */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 20px rgba(0, 255, 245, 0.35),
+    0 0 40px rgba(0, 255, 245, 0.15);
+}
+
+/* Links */
+a {
+  color: var(--neon);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-shadow: 0 0 8px var(--neon);
+}
+@media (max-width: 768px) {
+  section {
+    padding: 60px 6%;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
