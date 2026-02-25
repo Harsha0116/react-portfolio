@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import ParticlesBackground from "./components/ParticlesBackground";
 import Hero from "./components/hero";
 import About from "./components/About";
 import Skills from "./components/skills";
@@ -10,8 +9,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <>
-      {/* GLOBAL BACKGROUND */}
-      <ParticlesBackground />
+    
 
       {/* PAGE CONTENT */}
       <div style={{ position: "relative", zIndex: 1 }}>
